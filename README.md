@@ -21,7 +21,7 @@ Delayed aircraft are estimated to have cost the airlines several billion dollars
     * Initially the following features were considered: 'Inbound Delay', 'Month', 'Airport Departure Volume', 'Plane Turnaround Time','Departure Time','Temperature', 'Wind Speed','Precipitation'
     * Features are checked using correlation matrix
         <p align="center">
-          <<img align="left" width="350" height="350" src="./img/correlation.png">
+          <img align="left" width="350" height="350" src="./img/correlation.png">
         </p>
     * Then some features get can zero-ed out in Lasso regressions and are removed, specifically: 'Month', 'Airport Departure Volume', 'Plane Turnaround Time', 'Temperature'
     * ''Wind Speed' is further eliminated due to causing lower R2 score (indicating overfitting)
