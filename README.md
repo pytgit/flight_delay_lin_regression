@@ -20,12 +20,16 @@ Delayed aircraft are estimated to have cost the airlines several billion dollars
 5. Features selection:
     * Initially the following features were considered: 'Inbound Delay', 'Month', 'Airport Departure Volume', 'Plane Turnaround Time','Departure Time','Temperature', 'Wind Speed','Precipitation'
     * Features are checked using correlation matrix
-      <img align="left" width="200" height="200" src="./img/correlation.png">
+      <p align="center">
+        <<img align="left" width="200" height="200" src="./img/correlation.png">
+      </p>
     * Then some features get can zero-ed out in Lasso regressions and are removed, specifically: 'Month', 'Airport Departure Volume', 'Plane Turnaround Time', 'Temperature'
     * ''Wind Speed' is further eliminated due to causing lower R2 score (indicating overfitting)
     * So three features remains to be used in model: 'Inbound Delay', 'Departure Time', 'Precipitation'
 6. No feature transform were needed when checking the residual plots, but y (Departure Delay) is noticed to be heavily left skewed and so is being log transformed before training.
-<img align="left" width="500" height="300" src="./img/logy.png">
+    <p align="center">
+      <img width="500" height="300" src="./img/logy.png">
+    </p>
 7. RidgeCV, LassoCV, ElasticNet Models were used in training, and RidgeCV was seen to have slightly better R2 scoring, and therefore chosen.
 
 ## Results
