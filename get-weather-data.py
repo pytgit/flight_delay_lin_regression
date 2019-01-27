@@ -1,4 +1,5 @@
-# This is a modified version of the python script from https://github.com/akrherz/iem/blob/master/scripts/asos/iem_scraper_example.py
+# Credits: This is a modified version of the python script from https://github.com/akrherz/iem/blob/master/scripts/asos/iem_scraper_example.py
+# Modified by: Po-Yan Tsang
 
 import json
 import time
