@@ -1,4 +1,4 @@
-# Project-02
+# Flight Delay Prediction Using Linear Regression (Project 2 @ Metis)
 
 ## Overview
 Delayed aircraft are estimated to have cost the airlines several billion dollars in additional expense <sup>[1]</sup>, not to mention the uncertainty it adds to a passenger's travels. The goals of this project is to  predict flight delay time using linear regression based on 2017 United States flights data. Through the analysis, it should also shine a light on factors that impact flight delay time, and help others to develop mitigating strategies.
